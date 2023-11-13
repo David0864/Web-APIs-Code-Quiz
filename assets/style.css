@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+    background: rgb(1, 1, 99);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+  }
+  
+  input, select, option, optgroup, textarea, button,
+  pre, code {
+    font-size: 100%;
+    font-family: inherit;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+
+  #quiz-app {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+  }
+
+  #quiz-app h1 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+  }
+
+  #quiz {
+    padding: 20px 0;
+  }
+
+  #quiz h2 {
+    font-size: 23px;
+  }
+
+  .btn {
+    background: white;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    /* text-align: left; */
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+  #timer {
+    font-size: 23px;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+
+  #start {
+    padding: 300px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  #start button {
+    font-size: 30px;
+    background: white;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  #start button:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+  
