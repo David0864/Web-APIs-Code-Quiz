@@ -1,105 +1,106 @@
 let questions = [
     {
-        question: "Sample question 1",
+        question: "Inside which HTML element do we put the JavaScript?",
         answers: [
             {
-                text: "1",
+                text: "<scripting>",
+                correct: false
+            },
+            {
+                text: "<script>",
                 correct: true
             },
             {
-                text: "2",
+                text: "<js>",
                 correct: false
             },
             {
-                text: "3",
-                correct: false
-            },
-            {
-                text: "4",
+                text: "<javascript>",
                 correct: false
             },
         ]
     },
     {
-        question: "Sample question 2",
+        question: 'How do you write "Hello World" in an alert box',
+
         answers: [
             {
-                text: "sample 1",
+                text: "alert('Hello World')",
                 correct: true
             },
             {
-                text: "sample 2",
+                text: "alertBox('Hello World');  ",
                 correct: false
             },
             {
-                text: "sample 3",
+                text: "msg('Hello World');",
                 correct: false
             },
             {
-                text: "sample 4",
+                text: "msgBox('Hello World');",
                 correct: false
             },
         ]
     },
     {
-        question: "Sample question 3",
+        question: "What is the correct way to write a JavaScript array?",
         answers: [
             {
-                text: "sample 1",
+                text: "var colors = (1:'red', 2:'green', 3:'blue')",
+                correct: false
+            },
+            {
+                text: "var colors = 'red', 'green', 'blue'",
+                correct: false
+            },
+            {
+                text: "var colors = 1 = ('red'), 2 = ('green'), 3 = ('blue')",
+                correct: false
+            },
+            {
+                text: "var colors = ['red', 'green', 'blue']",
+                correct: true
+            },
+        ]
+    },
+    {
+        question: "Which event occurs when the user clicks on an HTML element?",
+        answers: [
+            {
+                text: "onmouseclick",
+                correct: false
+            },
+            {
+                text: "onchange",
+                correct: false
+            },
+            {
+                text: "onclick",
                 correct: true
             },
             {
-                text: "sample 2",
-                correct: false
-            },
-            {
-                text: "sample 3",
-                correct: false
-            },
-            {
-                text: "sample 4",
+                text: "onmouseover",
                 correct: false
             },
         ]
     },
     {
-        question: "Sample question 4",
+        question: "How do you round the number 7.25, to the nearest integer?",
         answers: [
             {
-                text: "sample 1",
+                text: "Math.round(7.25)",
                 correct: true
             },
             {
-                text: "sample 2",
+                text: "Math.rnd(7.25)",
                 correct: false
             },
             {
-                text: "sample 3",
+                text: "round(7.25)",
                 correct: false
             },
             {
-                text: "sample 4",
-                correct: false
-            },
-        ]
-    },
-    {
-        question: "Sample question 5",
-        answers: [
-            {
-                text: "sample 1",
-                correct: true
-            },
-            {
-                text: "sample 2",
-                correct: false
-            },
-            {
-                text: "sample 3",
-                correct: false
-            },
-            {
-                text: "sample 4",
+                text: "rnd(7.25)",
                 correct: false
             },
         ]
