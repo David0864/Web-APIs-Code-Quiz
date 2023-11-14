@@ -108,6 +108,7 @@ let questions = [
 ];
 let timeLeft = 60;
 let questionIndex = 0;
+let points = 0;
 
 let start = document.getElementById("start");
 let questionEl = document.getElementById("question");
@@ -116,6 +117,7 @@ let nextButton = document.getElementById("next");
 let timerEl = document.getElementById("timer");
 let quiz = document.getElementById("quiz-app");
 let end = document.getElementById("end-screen");
+let endMsg = document.getElementById("endMsg");
 
 quiz.style.display = "none";
 end.style.display = "none";
@@ -128,6 +130,10 @@ function startQuiz() {
 }
 
 function generateQuestions() {
+    if (questionIndex > 4) {
+        quiz.style.display = "none";
+        end.style.display = "block";
+    }
     answers.innerHTML = ""
     questionEl.textContent = questions[questionIndex].question;
     questions[questionIndex].answers.forEach(function (choice) {
@@ -150,6 +156,10 @@ function checkAnswer(e) {
     if (e.target.value == "false") {
         timeLeft -= 10; 
 
+    } else {
+        points += 1;
+
+        console.log(points);
     }
     // timeLeft -= 10;
     questions[questionIndex++];
@@ -186,9 +196,9 @@ function countdown() {
 countdown();
 
 function endQuiz() {
-    quiz.style.display = "none";
-    end.style.display = "block";
+    endMsg.textContent = points + " out of 5 is your final score";
 }
+
 
 
 
